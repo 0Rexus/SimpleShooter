@@ -1,6 +1,7 @@
-# GameProject
+# SimpleShooter
 
 ## What It Does
+This is a simple 3D top down shooter game prototype.
 
 ## Team Members
 - **Liam Roche** - Game Design/Programming - Github: @0Rexus
@@ -16,7 +17,9 @@
 ## How to Contribute
 
 ## Current Status
-- Player movement [IN PROGRESS]
+- Shooting [IN PROGRESS]
+- Player rotation [DONE]
+- Player movement [DONE]
 
 ## License
 MIT License
