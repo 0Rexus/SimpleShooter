@@ -9,11 +9,6 @@ public class CameraFollow : MonoBehaviour
     public Vector3 offset;
     private Vector3 velocity = Vector3.zero;
 
-    void Start()
-    {
-        
-    }
-
     void Update()
     {
         if (target != null)

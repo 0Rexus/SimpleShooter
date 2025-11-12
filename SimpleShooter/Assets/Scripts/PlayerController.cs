@@ -8,18 +8,29 @@ public class PlayerController : MonoBehaviour
     public float speed = 8f;
     private Vector2 move;
 
+    public GameObject bulletPrefab;
+    public Transform bulletPoint;
+
     public Camera mainCamera;
     public LayerMask groundLayer;
+
+    void Update()
+    {
+        LookAtMouse();
+        MovePlayer();
+    }
 
     public void OnMove(InputAction.CallbackContext context)
     {
         move = context.ReadValue<Vector2>();
     }
 
-    void Update()
+    public void OnShoot(InputAction.CallbackContext context)
     {
-        LookAtMouse();
-        MovePlayer();
+        if (context.performed)
+        {
+            GameObject bullet = Instantiate(bulletPrefab, bulletPoint.position, bulletPoint.rotation);
+        }
     }
 
     void MovePlayer()
