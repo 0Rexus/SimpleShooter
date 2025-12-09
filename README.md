@@ -25,6 +25,7 @@ This is a simple 3D top down shooter game prototype.
 - Make descriptive pull requests
 
 ## Current Status
+- Enemy Behavior [IN PROGRESS]
 - Shooting [DONE]
 - Player Rotation [DONE]
 - Player Movement [DONE]
